@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntlChat</string>
+    <string name="welcome_back">वापसी पर स्वागत है!</string>
+    <string name="login_to_continue">जारी रखने के लिए लॉगिन करें</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="sign_in">साइन इन करें</string>
+    <string name="create_new_account">नया खाता बनाएँ</string>
+    <string name="add_image">छवि जोड़ें</string>
+    <string name="name">नाम</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि कीजिये</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="select_user">उपयोगकर्ता का चयन करें</string>
+    <string name="type_a_message">एक संदेश लिखें</string>
+    <string name="online">ऑनलाइन</string>
+    <string name="notification_success">अधिसूचना सफलतापूर्वक भेजी गई!</string>
+    <string name="token_update_fail">टोकन अपडेट करने में असमर्थ</string>
+    <string name="sign_out_alert">भाग रद्द करना</string>
+    <string name="sign_out_error">साइन आउट करने में असमर्थ</string>
+    <string name="sign_in_fail">साइन इन करने में अक्षम</string>
+    <string name="enter_email">ईमेल दर्ज करें</string>
+    <string name="enter_valid_email">मान्य ईमेल दर्ज करें</string>
+    <string name="enter_password">पास वर्ड दर्ज करें</string>
+    <string name="select_profile_image">प्रोफ़ाइल छवि का चयन करें</string>
+    <string name="enter_name">नाम दर्ज</string>
+    <string name="user_not_available">कोई उपयोगकर्ता उपलब्ध नहीं है</string>
+    <string name="password_not_match_with_confirmation">पासवर्ड और पुष्टि मेल नहीं खाती</string>
+    <string name="enter_name_or_email_to_search">नाम या ईमेल दर्ज करें</string>
+</resources>

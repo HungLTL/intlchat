@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntlChat</string>
+    <string name="welcome_back">Ben tornato!</string>
+    <string name="login_to_continue">Accedi per continuare</string>
+    <string name="email">E-mail</string>
+    <string name="password">Parola d\'ordine</string>
+    <string name="sign_in">Registrazione</string>
+    <string name="create_new_account">Crea un nuovo account</string>
+    <string name="add_image">Aggiungi immagine</string>
+    <string name="name">Nome</string>
+    <string name="confirm_password">Conferma password</string>
+    <string name="sign_up">Iscrizione</string>
+    <string name="select_user">Seleziona utente</string>
+    <string name="type_a_message">Scrivi un messaggio...</string>
+    <string name="online">In linea</string>
+    <string name="notification_success">Notifica inviata con successo!</string>
+    <string name="token_update_fail">Impossibile aggiornare il token</string>
+    <string name="sign_out_alert">Uscita in corso...</string>
+    <string name="sign_out_error">Impossibile disconnettersi</string>
+    <string name="sign_in_fail">Impossibile accedere</string>
+    <string name="enter_email">Inserisci l\'email</string>
+    <string name="enter_valid_email">Inserisci un indirizzo e-mail valido</string>
+    <string name="enter_password">Inserire la password</string>
+    <string name="select_profile_image">Seleziona l\'immagine del profilo</string>
+    <string name="enter_name">Inserisci il nome</string>
+    <string name="user_not_available">Nessun utente disponibile</string>
+    <string name="password_not_match_with_confirmation">Password e conferma non corrispondono!</string>
+    <string name="enter_name_or_email_to_search">Inserisci il nome o l\'e-mail</string>
+</resources>

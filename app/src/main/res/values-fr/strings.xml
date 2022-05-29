@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntlChat</string>
+    <string name="welcome_back">Content de te revoir!</string>
+    <string name="login_to_continue">Connectez-vous pour continuer</string>
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="sign_in">Connectez-vous à votre compte</string>
+    <string name="create_new_account">Créer un nouveau compte</string>
+    <string name="add_image">Ajouter une image</string>
+    <string name="name">Nom</string>
+    <string name="confirm_password">Confirmez le mot de passe</string>
+    <string name="sign_up">S\'inscrire</string>
+    <string name="select_user">Sélectionnez l\'utilisateur</string>
+    <string name="type_a_message">Tapez un message...</string>
+    <string name="online">En ligne</string>
+    <string name="notification_success">Notification envoyée avec succès !</string>
+    <string name="token_update_fail">Impossible de mettre à jour le jeton</string>
+    <string name="sign_out_alert">Déconnecter...</string>
+    <string name="sign_out_error">Impossible de se déconnecter</string>
+    <string name="sign_in_fail">Impossible de se connecter</string>
+    <string name="enter_email">Entrez l\'e-mail</string>
+    <string name="enter_valid_email">Entrez une adresse email valide</string>
+    <string name="enter_password">Entrer le mot de passe</string>
+    <string name="select_profile_image">Sélectionnez l\'image de profil</string>
+    <string name="enter_name">Entrez le nom</string>
+    <string name="user_not_available">Aucun utilisateur disponible</string>
+    <string name="password_not_match_with_confirmation">Le mot de passe et la confirmation ne correspondent pas !</string>
+    <string name="enter_name_or_email_to_search">Entrez le nom ou l\'e-mail</string>
+</resources>

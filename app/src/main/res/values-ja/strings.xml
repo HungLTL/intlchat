@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntlChat</string>
+    <string name="password_not_match_with_confirmation">パスワードと確認が一致しません</string>
+    <string name="welcome_back">お帰りなさい</string>
+    <string name="login_to_continue">ログインして続行</string>
+    <string name="email">Eメール</string>
+    <string name="password">パスワード</string>
+    <string name="sign_in">ログイン</string>
+    <string name="create_new_account">新しいアカウントを作成する</string>
+    <string name="add_image">画像を追加</string>
+    <string name="name">名前</string>
+    <string name="confirm_password">パスワードを認証する</string>
+    <string name="sign_up">サインアップ</string>
+    <string name="select_user">ユーザーを選択</string>
+    <string name="type_a_message">メッセージを入力します</string>
+    <string name="online">オンライン</string>
+    <string name="notification_success">通知が正常に送信されました</string>
+    <string name="token_update_fail">トークンを更新できません</string>
+    <string name="sign_out_alert">サインアウト</string>
+    <string name="sign_out_error">サインアウトできません</string>
+    <string name="sign_in_fail">サインインできません</string>
+    <string name="enter_email">メールアドレスを入力して</string>
+    <string name="enter_valid_email">有効な電子メールを入力してください</string>
+    <string name="enter_password">パスワードを入力する</string>
+    <string name="select_profile_image">プロフィール画像を選択</string>
+    <string name="enter_name">名前を入力</string>
+    <string name="user_not_available">利用可能なユーザーがいません</string>
+    <string name="enter_name_or_email_to_search">名前またはメールアドレスを入力してください</string>
+</resources>

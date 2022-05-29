@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntlChat</string>
+    <string name="welcome_back">مرحبًا بعودتك</string>
+    <string name="login_to_continue">تسجيل الدخول للمتابعة</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="create_new_account">انشاء حساب جديد</string>
+    <string name="add_image">إضافة صورة</string>
+    <string name="name">اسم</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="sign_up">اشتراك</string>
+    <string name="select_user">اختر المستخدم</string>
+    <string name="type_a_message">اكتب رسالة</string>
+    <string name="online">متصل</string>
+    <string name="notification_success">تم إرسال الإخطار بنجاح</string>
+    <string name="token_update_fail">تعذر تحديث الرمز المميز</string>
+    <string name="sign_out_alert">تسجيل خروج</string>
+    <string name="sign_out_error">غير قادر على الخروج</string>
+    <string name="sign_in_fail">غير قادر على تسجيل الدخول</string>
+    <string name="enter_email">أدخل البريد الإلكتروني</string>
+    <string name="enter_valid_email">أدخل بريدًا إلكترونيًا صالحًا</string>
+    <string name="enter_password">أدخل كلمة المرور</string>
+    <string name="select_profile_image">حدد صورة الملف الشخصي</string>
+    <string name="enter_name">أدخل الاسم</string>
+    <string name="user_not_available">لا يوجد مستخدم متاح</string>
+    <string name="password_not_match_with_confirmation">كلمة المرور والتأكيد لا يتطابقان</string>
+    <string name="enter_name_or_email_to_search">أدخل الاسم أو البريد الإلكتروني</string>
+</resources>

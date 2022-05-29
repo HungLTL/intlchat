@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "80644837850",
+    "project_id": "intlchat-7001f",
+    "storage_bucket": "intlchat-7001f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80644837850:android:c1b7ef3da696075c69f0e3",
+        "android_client_info": {
+          "package_name": "com.example.intlchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80644837850-hv2plplbs5p60pfasq3vkbukkhv1ebml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXK-CDgXxP3Do6Ejnnra-Did8JkSnr0RY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80644837850-hv2plplbs5p60pfasq3vkbukkhv1ebml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntlChat</string>
+    <string name="welcome_back">Chào mừng bạn trở lại!</string>
+    <string name="login_to_continue">Đăng nhập để tiếp tục</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="create_new_account">Tạo tài khoản mới</string>
+    <string name="add_image">Thêm hình ảnh</string>
+    <string name="name">Tên</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="select_user">Chọn người dùng</string>
+    <string name="type_a_message">Viết tin nhắn của bạn...</string>
+    <string name="online">Online</string>
+    <string name="notification_success">Đã gửi thông báo thành công!</string>
+    <string name="token_update_fail">Không thể cập nhật token</string>
+    <string name="sign_out_alert">Đang đăng xuất...</string>
+    <string name="sign_out_error">Không thể đăng xuất</string>
+    <string name="sign_in_fail">Không thể đăng nhập</string>
+    <string name="enter_email">Nhập email</string>
+    <string name="enter_valid_email">Nhập email hợp lệ</string>
+    <string name="enter_password">Nhập mật khẩu</string>
+    <string name="select_profile_image">Chọn ảnh đại diện</string>
+    <string name="enter_name">Nhập tên</string>
+    <string name="password_not_match_with_confirmation">Xác nhận mật khẩu phải giống với mật khẩu đã đưa ra!</string>
+    <string name="user_not_available">Không tìm thấy người dùng</string>
+    <string name="enter_name_or_email_to_search">Nhập tên hoặc email</string>
+</resources>

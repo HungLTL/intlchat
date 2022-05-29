@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntlChat</string>
+    <string name="welcome_back">Tekrar hoşgeldiniz!</string>
+    <string name="login_to_continue">Devam etmek için giriş yapın</string>
+    <string name="email">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="sign_in">Kayıt olmak</string>
+    <string name="create_new_account">Yeni hesap oluştur</string>
+    <string name="add_image">Resim eklemek</string>
+    <string name="name">İsim</string>
+    <string name="confirm_password">Şifreyi Onayla</string>
+    <string name="sign_up">Üye olmak</string>
+    <string name="select_user">Kullanıcı seç</string>
+    <string name="type_a_message">Bir mesaj yazın</string>
+    <string name="online">Çevrimiçi</string>
+    <string name="notification_success">Bildirim başarıyla gönderildi!</string>
+    <string name="token_update_fail">Jeton güncellenemiyor</string>
+    <string name="sign_out_alert">Oturum kapatılıyor...</string>
+    <string name="sign_out_error">Çıkış yapılamıyor</string>
+    <string name="sign_in_fail">Oturum açılamıyor</string>
+    <string name="enter_email">E-posta girin</string>
+    <string name="enter_valid_email">Geçerli e-posta girin</string>
+    <string name="enter_password">Şifre girin</string>
+    <string name="select_profile_image">Profil resmi seçin</string>
+    <string name="enter_name">İsim giriniz</string>
+    <string name="user_not_available">Kullanılabilir kullanıcı yok</string>
+    <string name="password_not_match_with_confirmation">Şifre ve onay eşleşmiyor!</string>
+    <string name="enter_name_or_email_to_search">Ad veya e-posta girin</string>
+</resources>

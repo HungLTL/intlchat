@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntlChat</string>
+    <string name="welcome_back">Willkommen zurück!</string>
+    <string name="login_to_continue">Melden Sie sich an, um fortzufahren</string>
+    <string name="email">Email</string>
+    <string name="password">Passwort</string>
+    <string name="sign_in">Einloggen</string>
+    <string name="create_new_account">Neuen Account erstellen</string>
+    <string name="add_image">Bild hinzufügen</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Passwort bestätigen</string>
+    <string name="sign_up">Anmelden</string>
+    <string name="select_user">Nutzer wählen</string>
+    <string name="type_a_message">Geben Sie eine Nachricht ein...</string>
+    <string name="online">Online</string>
+    <string name="notification_success">Benachrichtigung erfolgreich versendet!</string>
+    <string name="token_update_fail">Token kann nicht aktualisiert werden</string>
+    <string name="sign_out_alert">Abmelden...</string>
+    <string name="sign_out_error">Abmelden nicht möglich</string>
+    <string name="sign_in_fail">Anmeldung nicht möglich</string>
+    <string name="enter_email">Email eingeben</string>
+    <string name="enter_valid_email">Geben Sie eine gültige E-Mail-Adresse ein</string>
+    <string name="enter_password">Passwort eingeben</string>
+    <string name="select_profile_image">Profilbild auswählen</string>
+    <string name="enter_name">Name eingeben</string>
+    <string name="user_not_available">Kein Benutzer verfügbar</string>
+    <string name="password_not_match_with_confirmation">Passwort und Bestätigung stimmen nicht überein!</string>
+    <string name="enter_name_or_email_to_search">Name oder E-Mail eingeben</string>
+</resources>

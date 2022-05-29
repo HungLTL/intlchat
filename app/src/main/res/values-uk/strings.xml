@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntlChat</string>
+    <string name="password_not_match_with_confirmation">Пароль і підтвердження не збігаються!</string>
+    <string name="user_not_available">Немає доступних користувачів</string>
+    <string name="enter_name">Введіть назву</string>
+    <string name="select_profile_image">Виберіть зображення профілю</string>
+    <string name="enter_password">Введіть пароль</string>
+    <string name="enter_valid_email">Введіть дійсну адресу електронної пошти</string>
+    <string name="enter_email">Введіть електронну адресу</string>
+    <string name="sign_in_fail">Не вдається ввійти</string>
+    <string name="sign_out_error">Не вдається вийти</string>
+    <string name="sign_out_alert">Вихід...</string>
+    <string name="token_update_fail">Не вдається оновити маркер</string>
+    <string name="notification_success">Сповіщення успішно надіслано!</string>
+    <string name="online">Онлайн</string>
+    <string name="type_a_message">Введіть повідомлення</string>
+    <string name="select_user">Виберіть користувача</string>
+    <string name="sign_up">зареєструватися</string>
+    <string name="confirm_password">Підтвердьте пароль</string>
+    <string name="name">Ім\'я</string>
+    <string name="add_image">Додати зображення</string>
+    <string name="create_new_account">Створити новий обліковий запис</string>
+    <string name="sign_in">Увійти</string>
+    <string name="password">Пароль</string>
+    <string name="email">Електронна пошта</string>
+    <string name="login_to_continue">Увійдіть, щоб продовжити</string>
+    <string name="welcome_back">З поверненням!</string>
+    <string name="enter_name_or_email_to_search">Введіть ім\'я або адресу електронної пошти</string>
+</resources>
