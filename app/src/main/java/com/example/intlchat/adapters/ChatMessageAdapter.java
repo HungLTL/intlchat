@@ -3,24 +3,25 @@ package com.example.intlchat.adapters;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.MutableLiveData;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.intlchat.activities.MainActivity;
+import com.example.intlchat.ChatApplication;
+import com.example.intlchat.R;
 import com.example.intlchat.databinding.ItemContainerReceivedMessageBinding;
 import com.example.intlchat.databinding.ItemContainerSentMessageBinding;
 import com.example.intlchat.models.ChatMessage;
 import com.google.mlkit.common.model.DownloadConditions;
 import com.google.mlkit.nl.languageid.LanguageIdentification;
 import com.google.mlkit.nl.languageid.LanguageIdentifier;
-import com.google.mlkit.nl.translate.TranslateLanguage;
 import com.google.mlkit.nl.translate.Translation;
 import com.google.mlkit.nl.translate.Translator;
 import com.google.mlkit.nl.translate.TranslatorOptions;
 
 import java.util.List;
-import java.util.Objects;
 
 public class ChatMessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
@@ -97,41 +98,53 @@ public class ChatMessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     static class ReceivedMessageViewHolder extends RecyclerView.ViewHolder {
         private final ItemContainerReceivedMessageBinding binding;
+        private Translator translator;
+        private MutableLiveData<Boolean> isTranslatorAvailable;
 
         ReceivedMessageViewHolder(ItemContainerReceivedMessageBinding itemContainerReceivedMessageBinding) {
             super(itemContainerReceivedMessageBinding.getRoot());
             binding = itemContainerReceivedMessageBinding;
+
+            isTranslatorAvailable = new MutableLiveData<>();
+            isTranslatorAvailable.setValue(false);
+            isTranslatorAvailable.observeForever(aBoolean -> {
+                if (aBoolean)
+                    translator.translate(binding.textMessage.getText().toString())
+                            .addOnSuccessListener(binding.textMessage::setText)
+                            .addOnFailureListener(e -> Toast.makeText(binding.getRoot().getContext(), R.string.error_translate, Toast.LENGTH_SHORT).show());
+            });
         }
 
         void setData(ChatMessage chatMsg, Bitmap receiverProfileImage) {
-            String message = chatMsg.message;
-
-            LanguageIdentifier languageIdentifier = LanguageIdentification.getClient();
-            languageIdentifier.identifyLanguage(message).addOnSuccessListener(
-                    languageCode -> {
-                        if (!languageCode.equals("und")) {
-
-                            TranslatorOptions options = new TranslatorOptions.Builder()
-                                    .setSourceLanguage(Objects.requireNonNull(TranslateLanguage.fromLanguageTag(languageCode)))
-                                    .setTargetLanguage(Objects.requireNonNull(TranslateLanguage.fromLanguageTag(MainActivity.sysLang)))
-                                    .build();
-                            final Translator translator = Translation.getClient(options);
-
-                            DownloadConditions conditions = new DownloadConditions.Builder()
-                                    .requireWifi()
-                                    .build();
-                            translator.downloadModelIfNeeded(conditions);
-                            translator.translate(message)
-                                    .addOnSuccessListener(binding.textMessage::setText);
-                        }
-                    })
-                    .addOnFailureListener(
-                            e -> binding.textMessage.setText(message));
-
+            binding.textMessage.setText(chatMsg.message);
             binding.textDateTime.setText(chatMsg.dateTime);
             if (receiverProfileImage != null) {
                 binding.imageProfile.setImageBitmap(receiverProfileImage);
             }
+
+            LanguageIdentifier languageIdentifier = LanguageIdentification.getClient();
+            languageIdentifier.identifyLanguage(chatMsg.message)
+                    .addOnSuccessListener(languageCode -> {
+                        if (languageCode.equals("und") || languageCode.isEmpty())
+                            Toast.makeText(binding.getRoot().getContext(), R.string.error_lang_id, Toast.LENGTH_SHORT).show();
+                        else {
+                            if (!languageCode.equals(ChatApplication.sysLang)) {
+                                TranslatorOptions options = new TranslatorOptions.Builder()
+                                        .setSourceLanguage(languageCode)
+                                        .setTargetLanguage(ChatApplication.sysLang)
+                                        .build();
+                                translator = Translation.getClient(options);
+
+                                DownloadConditions conditions = new DownloadConditions.Builder()
+                                        .requireWifi()
+                                        .build();
+                                translator.downloadModelIfNeeded(conditions)
+                                        .addOnSuccessListener(unused -> isTranslatorAvailable.setValue(true))
+                                        .addOnFailureListener(e -> Toast.makeText(binding.getRoot().getContext(), R.string.error_model_download, Toast.LENGTH_SHORT).show());
+                            }
+                        }
+                    })
+                    .addOnFailureListener(e -> Toast.makeText(binding.getRoot().getContext(), R.string.error_lang_id, Toast.LENGTH_SHORT).show());
         }
     }
 }

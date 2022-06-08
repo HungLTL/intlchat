@@ -28,7 +28,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 
 public class MainActivity extends BaseActivity implements ConversationListener {
 
@@ -38,12 +37,9 @@ public class MainActivity extends BaseActivity implements ConversationListener {
     private RecentConversationAdapter conversationAdapter;
     private FirebaseFirestore database;
 
-    public static String sysLang;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        sysLang = Locale.getDefault().getLanguage();
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -57,7 +53,7 @@ public class MainActivity extends BaseActivity implements ConversationListener {
 
     private void init() {
         conversations = new ArrayList<>();
-        conversationAdapter = new RecentConversationAdapter(conversations, this);
+        conversationAdapter = new RecentConversationAdapter(conversations, this, getApplicationContext());
         binding.conversationRecyclerView.setAdapter(conversationAdapter);
         database = FirebaseFirestore.getInstance();
     }

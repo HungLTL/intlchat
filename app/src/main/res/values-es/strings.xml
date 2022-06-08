@@ -27,4 +27,9 @@
     <string name="user_not_available">Ningún usuario disponible</string>
     <string name="password_not_match_with_confirmation">¡La contraseña y la confirmación no coinciden!</string>
     <string name="enter_name_or_email_to_search">Ingrese nombre o correo electrónico</string>
+    <string name="error_lang_id">Error: no se puede identificar el idioma.</string>
+    <string name="error_translate">Error: No se puede traducir el mensaje.</string>
+    <string name="error_model_download">Error: no se puede descargar el modelo de traducción.</string>
+    <string name="error_translator_not_available">Error: traductor no disponible.</string>
+    <string name="translator_available">Traductor disponible!</string>
 </resources>

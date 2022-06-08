@@ -27,4 +27,9 @@
     <string name="user_not_available">لا يوجد مستخدم متاح</string>
     <string name="password_not_match_with_confirmation">كلمة المرور والتأكيد لا يتطابقان</string>
     <string name="enter_name_or_email_to_search">أدخل الاسم أو البريد الإلكتروني</string>
+    <string name="error_lang_id">خطأ: لا يمكن تحديد اللغة.</string>
+    <string name="error_translate">خطأ: لا يمكن ترجمة الرسالة.</string>
+    <string name="error_model_download">خطأ: لا يمكن تنزيل نموذج الترجمة.</string>
+    <string name="error_translator_not_available">خطأ: المترجم غير متوفر.</string>
+    <string name="translator_available">مترجم متاح!</string>
 </resources>

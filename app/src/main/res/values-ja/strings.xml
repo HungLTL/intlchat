@@ -27,4 +27,9 @@
     <string name="enter_name">名前を入力</string>
     <string name="user_not_available">利用可能なユーザーがいません</string>
     <string name="enter_name_or_email_to_search">名前またはメールアドレスを入力してください</string>
+    <string name="error_lang_id">エラー：言語を識別できません。</string>
+    <string name="error_translate">エラー：メッセージを翻訳できません。</string>
+    <string name="error_model_download">エラー：翻訳モデルをダウンロードできません。</string>
+    <string name="error_translator_not_available">エラー：トランスレータが利用できません。</string>
+    <string name="translator_available">翻訳者が利用可能です！</string>
 </resources>

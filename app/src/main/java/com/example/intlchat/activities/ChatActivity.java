@@ -25,8 +25,6 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.google.mlkit.nl.smartreply.TextMessage;
-import com.google.mlkit.nl.translate.TranslateLanguage;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -50,7 +48,6 @@ public class ChatActivity extends BaseActivity {
     private ActivityChatBinding binding;
     private User receiverUser;
     private List<ChatMessage> chatMessages;
-    private List<TextMessage> conversation;
     private ChatMessageAdapter chatMessageAdapter;
     private PreferenceManager preferenceManager;
     private FirebaseFirestore database;
@@ -69,9 +66,6 @@ public class ChatActivity extends BaseActivity {
     }
 
     private void sendMessage() {
-        if (MainActivity.sysLang != TranslateLanguage.ENGLISH) {
-
-        }
 
         HashMap<String, Object> message = new HashMap<>();
         message.put(Constants.KEY_SENDER_ID, preferenceManager.getString(Constants.KEY_USER_ID));
@@ -203,9 +197,10 @@ public class ChatActivity extends BaseActivity {
                     ChatMessage chatMsg = new ChatMessage();
                     chatMsg.senderId = documentChange.getDocument().getString(Constants.KEY_SENDER_ID);
                     chatMsg.receiverId = documentChange.getDocument().getString(Constants.KEY_RECEIVER_ID);
-                    chatMsg.message = documentChange.getDocument().getString(Constants.KEY_MESSAGE);
                     chatMsg.dateTime = getReadableDateTime(documentChange.getDocument().getDate(Constants.KEY_TIMESTAMP));
                     chatMsg.dateObject = documentChange.getDocument().getDate(Constants.KEY_TIMESTAMP);
+                    chatMsg.message = documentChange.getDocument().getString(Constants.KEY_MESSAGE);
+
                     chatMessages.add(chatMsg);
                 }
             }
@@ -225,7 +220,6 @@ public class ChatActivity extends BaseActivity {
 
     private void init() {
         preferenceManager = new PreferenceManager(getApplicationContext());
-        conversation = new ArrayList<>();
         chatMessages = new ArrayList<>();
         chatMessageAdapter = new ChatMessageAdapter(
                 chatMessages,

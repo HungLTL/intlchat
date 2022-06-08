@@ -27,4 +27,9 @@
     <string name="login_to_continue">계속하려면 로그인하세요.</string>
     <string name="welcome_back">다시 오신 것을 환영합니다</string>
     <string name="enter_name_or_email_to_search">이름 또는 이메일 입력</string>
+    <string name="error_lang_id">오류: 언어를 식별할 수 없습니다.</string>
+    <string name="error_translate">오류: 메시지를 번역할 수 없습니다.</string>
+    <string name="error_model_download">오류: 번역 모델을 다운로드할 수 없습니다.</string>
+    <string name="error_translator_not_available">오류: 번역기를 사용할 수 없습니다.</string>
+    <string name="translator_available">번역기 사용 가능!</string>
 </resources>

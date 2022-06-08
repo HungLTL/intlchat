@@ -27,4 +27,9 @@
     <string name="user_not_available">कोई उपयोगकर्ता उपलब्ध नहीं है</string>
     <string name="password_not_match_with_confirmation">पासवर्ड और पुष्टि मेल नहीं खाती</string>
     <string name="enter_name_or_email_to_search">नाम या ईमेल दर्ज करें</string>
+    <string name="error_lang_id">त्रुटि: भाषा की पहचान नहीं कर सकता।</string>
+    <string name="error_translate">त्रुटि: संदेश का अनुवाद नहीं कर सकता।</string>
+    <string name="error_model_download">त्रुटि: अनुवाद मॉडल डाउनलोड नहीं कर सकता।</string>
+    <string name="error_translator_not_available">त्रुटि: अनुवादक उपलब्ध नहीं है।</string>
+    <string name="translator_available">अनुवादक उपलब्ध!</string>
 </resources>

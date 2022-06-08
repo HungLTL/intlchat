@@ -27,4 +27,9 @@
     <string name="login_to_continue">Увійдіть, щоб продовжити</string>
     <string name="welcome_back">З поверненням!</string>
     <string name="enter_name_or_email_to_search">Введіть ім\'я або адресу електронної пошти</string>
+    <string name="error_lang_id">Помилка: не вдається визначити мову.</string>
+    <string name="error_translate">Помилка: не вдається перекласти повідомлення.</string>
+    <string name="error_model_download">Помилка: не вдається завантажити модель перекладу.</string>
+    <string name="error_translator_not_available">Помилка: перекладач недоступний.</string>
+    <string name="translator_available">Перекладач доступний!</string>
 </resources>

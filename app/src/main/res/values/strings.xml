@@ -27,4 +27,9 @@
     <string name="user_not_available">No user available.</string>
     <string name="password_not_match_with_confirmation">Password confirmation must match with stated password!</string>
     <string name="enter_name_or_email_to_search">Enter name or email to search</string>
+    <string name="error_lang_id">Error: Cannot identify language.</string>
+    <string name="error_translate">Failed to translate message.</string>
+    <string name="error_model_download">Download model failed.</string>
+    <string name="error_translator_not_available">Translator not available!</string>
+    <string name="translator_available">Translator available!</string>
 </resources>

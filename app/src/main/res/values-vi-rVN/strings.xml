@@ -27,4 +27,9 @@
     <string name="password_not_match_with_confirmation">Xác nhận mật khẩu phải giống với mật khẩu đã đưa ra!</string>
     <string name="user_not_available">Không tìm thấy người dùng</string>
     <string name="enter_name_or_email_to_search">Nhập tên hoặc email</string>
+    <string name="error_lang_id">Lỗi: Không thể nhận dạng ngôn ngữ.</string>
+    <string name="error_translate">Lỗi: Không thể phiên dịch tin nhắn.</string>
+    <string name="error_model_download">Lỗi: Không thể tải trình biên dịch.</string>
+    <string name="error_translator_not_available">Lỗi: Không có trình biên dịch!</string>
+    <string name="translator_available">Đã có trình biên dịch!</string>
 </resources>
