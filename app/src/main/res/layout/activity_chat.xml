@@ -12,9 +12,9 @@
         android:id="@+id/viewBackground"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:background="@drawable/background_content_top"
-        app:layout_constraintBottom_toTopOf="@id/layoutSend"
+        app:layout_constraintBottom_toTopOf="@id/layoutHint"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
@@ -82,11 +82,11 @@
         android:orientation="vertical"
         android:overScrollMode="never"
         android:padding="@dimen/_20sdp"
-        app:stackFromEnd="true"
         android:visibility="gone"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="@id/viewBackground"
-        app:layout_constraintTop_toBottomOf="@id/viewSupporter" />
+        app:layout_constraintTop_toBottomOf="@id/viewSupporter"
+        app:stackFromEnd="true" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -116,11 +116,69 @@
 
     </FrameLayout>
 
+    <LinearLayout
+        android:id="@+id/layoutHint"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/viewBackground"
+        app:layout_constraintBottom_toTopOf="@id/inputMessage"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        
+        <TextView
+            android:id="@+id/hint1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:paddingStart="@dimen/_6sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="@dimen/_6sdp"
+            app:autoSizeMaxTextSize="@dimen/_14sdp"
+            android:background="@drawable/background_chat_input"/>
+
+        <TextView
+            android:id="@+id/hint2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:paddingStart="@dimen/_6sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="@dimen/_6sdp"
+            app:autoSizeMaxTextSize="@dimen/_14sdp"
+            android:background="@drawable/background_chat_input"/>
+
+        <TextView
+            android:id="@+id/hint3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:paddingStart="@dimen/_6sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="@dimen/_6sdp"
+            app:autoSizeMaxTextSize="@dimen/_14sdp"
+            android:background="@drawable/background_chat_input"/>
+        
+    </LinearLayout>
+
     <EditText
         android:id="@+id/inputMessage"
         android:layout_width="0dp"
         android:layout_height="@dimen/_40sdp"
-        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_12sdp"
         android:background="@drawable/background_chat_input"

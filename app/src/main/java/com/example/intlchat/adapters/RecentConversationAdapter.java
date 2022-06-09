@@ -90,7 +90,7 @@ public class RecentConversationAdapter extends RecyclerView.Adapter<RecentConver
                 conversationListener.onConversationClicked(user);
             });
 
-            if (chatMsg.receiverId.equals(preferenceManager.getString(Constants.KEY_USER_ID))) {
+            if (chatMsg.senderId.equals(preferenceManager.getString(Constants.KEY_USER_ID))) {
                 String receivedMessage = chatMsg.message;
 
                 LanguageIdentifier languageIdentifier = LanguageIdentification.getClient();

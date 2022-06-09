@@ -54,7 +54,7 @@
             android:id="@+id/input_password"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
-            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:background="@drawable/background_input"
             android:hint="@string/password"
             android:imeOptions="actionDone"
